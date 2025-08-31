@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog | A page where you will get articles related to EVERYTHING">
+    <meta name="keywords" content="Aryan BLog, Web Dev Blog, Aryan6600, Coding Blog">
+    <meta name="author" content="Aryan Tiwari">
+    <link rel="shortcut icon" href="me.jpeg" type="image/x-icon">
+    <title>Blog | By Aryan Tiwari</title>
+    <link rel="stylesheet" href="blog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <h1><a href="/">My Awesome Blog</a></h1>
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="/">Main Website</a></li>
+                    <li class="dropdown">
+                        <a href="#">Categories &#9662;</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">Tutorials</a></li>
+                            <li><a href="#">Life</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="site-main container">
+        <section class="main-content">
+            <article class="blog-post" id="post1">
+                <h2>First Post: Getting Started with Web Development</h2>
+                <div class="post-meta">
+                    <span class="date">Published on August 28, 2025</span>
+                    <span class="author">by Jane Doe</span>
+                </div>
+                <p>
+                    Welcome to my blog! This is my first post where I'll be sharing some tips and tricks for new web developers. We'll cover everything from setting up your environment to writing your first lines of code. This is a longer version of the text to show how the popup would handle it. Here's more content...
+                </p>
+                <a href="#" class="read-more" onclick="openPopup('post1')">Read more...</a>
+            </article>
+
+            <article class="blog-post" id="post2">
+                <h2>Second Post: The Importance of CSS Grids</h2>
+                <div class="post-meta">
+                    <span class="date">Published on August 25, 2025</span>
+                    <span class="author">by Jane Doe</span>
+                </div>
+                <p>
+                    CSS Grid is a powerful layout system that makes creating complex, responsive designs easier than ever before. In this post, we'll dive into the basics of CSS Grid and see how it compares to Flexbox. This is a longer version of the text to show how the popup would handle it. Here's more content...
+                </p>
+                <a href="#" class="read-more" onclick="openPopup('post2')">Read more...</a>
+            </article>
+        </section>
+
+        <aside class="sidebar">
+            <div class="widget">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Tutorials</a></li>
+                    <li><a href="#">Life</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 My Awesome Blog. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="popup" class="popup-container">
+        <div class="popup-content">
+            <button class="back-button" onclick="closePopup()">&#8592; Back</button>
+            <div class="popup-inner">
+                <h2 id="popup-title"></h2>
+                <div id="popup-content-body"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openPopup(postId) {
+            const post = document.getElementById(postId);
+            const title = post.querySelector('h2').textContent;
+            const content = post.querySelector('p').innerHTML;
+            const image = post.querySelector('.blog-post-image') ? post.querySelector('.blog-post-image').innerHTML : '';
+
+            document.getElementById('popup-title').textContent = title;
+            document.getElementById('popup-content-body').innerHTML = content;
+            document.getElementById('popup').style.display = 'block';
+            document.body.style.overflow = 'hidden'; // Prevents background scrolling
+        }
+
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+            document.body.style.overflow = 'auto'; // Re-enables background scrolling
+        }
+    </script>
+
+</body>
+</html>
