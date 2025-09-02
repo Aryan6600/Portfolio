@@ -8,6 +8,7 @@
     <meta name="keywords" content="Web Developer, Web Dev,Aryan, Tiwari, Aryan Tiwari, NSUT, Aryan6600">
     <meta name="author" content="Aryan Tiwari">
     <link rel="shortcut icon" href="me.jpeg" type="image/x-icon">
+    <link rel="preload" href="/hobby.png" as="image">
     <link rel="stylesheet" href="style.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -27,10 +28,10 @@
         </div>
         <div class="collapse" id="nav">
             <ul class="navbar-nav">
-                <li><a href="#about" class="active">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Expertise</a></li>
-                <li><a href="/blog.html">Blog</a></li>
+                <li><a href="#about" class="navbar-closer" class="active navbar-closer" data-toggle="nav">About</a></li>
+                <li><a href="#projects" class="navbar-closer" data-toggle="nav">Projects</a></li>
+                <li><a href="#skills" class="navbar-closer" data-toggle="nav" >Expertise</a></li>
+                <li><a href="/blog.html" class="navbar-closer" data-toggle="nav" >Blog</a></li>
                 <!-- <li><a class="btn modal-toggler" data-toggle="appointment">Appointment</a></li> -->
             </ul>
         </div>
@@ -69,11 +70,12 @@
             </div>
         </div>
         <div class="content" id="cnt">
-            <h2>Hello</h2>
-            <p>Lorem ipsum dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eaque id asperiores
-                accusantium accusamus tenetur excepturi illo? Ea debitis deserunt voluptates fuga quisquam quam
-                repudiandae vitae ipsum, soluta molestias doloremque. sit amet, consectetur adipisicing elit. Placeat
-                enim ea earum nam eaque reiciendis doloribus in at minus cumque?</p>
+            <h2>Hi,</h2>
+            <p>I am an Full stack Web Developer, with my primary language as Node Js , also have done web dev in
+                    Python. Have some prior experience in App Developement using React Native and Flutter.</p>
+                <p>Intested in learning Data Science and Machine Learning.</p>
+                <p>I am looking for people to collaborate with them and supplement my lower experience by working on
+                    real world projects</p>
         </div>
     </section>
     <section class="projects common" id="projects">
@@ -161,6 +163,39 @@
             </div>
         </div>
     </section>
+    <section class="common hobbies">
+        <div class="container">
+            <h2>Hobbies</h2>
+            <div class="grid-wrapper">
+                <div class="grid">
+                    <div class="card hobby">
+                        <h3>Reading</h3>
+                    </div>
+                    <div class="card hobby">
+                        <h3>Coding</h3>
+                    </div>
+                    <div class="card hobby">
+                        <h3>Gaming</h3>
+                    </div>
+                    <div class="card hobby">
+                        <h3>Travelling</h3>
+                    </div>
+                    <div class="card hobby">
+                        <h3>Sleeping</h3>
+                    </div>
+                    <div class="card hobby">
+                        <h3>Singing</h3>
+                    </div>
+                    <div class="card hobby">
+                        <h3>YouTube</h3>
+                    </div>
+                    <div class="card hobby">
+                        <h3>Talking</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class=" skills common" id="skills">
         <div class="container">
             <h2>My Skillet</h2>
@@ -168,40 +203,28 @@
                 <div class="grid">
                     <div class="card">
                         <h3>Full Stack Web Developement</h3>
-                        <p>I am a Full Stack Web Developer with experience of many Projects</p>
+                        <p>I am a Full Stack Web Developer with experience of many Projects.</p>
                     </div>
                     <div class="card">
                         <h3>Prior Experience in React Native</h3>
-                        <p>Created some Apps using React Native and Expo</p>
+                        <p>Created some Apps using React Native and Expo.</p>
                     </div>
                     <div class="card">
                         <h3>Basic Python</h3>
-                        <p>I Sometimes use Python as my Server Side , so I have a fair bit of experience in working with Python.</p>
+                        <p>I also use Python as my Server Side, and I have a fair bit of experience working with Python.</p>
                     </div>
                     <div class="card">
                         <h3>Deployment</h3>
-                        <p>Deployed Several Websites using DigitalOcean VPS</p>
+                        <p>Deployed Several Websites using DigitalOcean VPS.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- <section class="contact common">
-            <div class="container">
-                <h2>Contact Me</h2>
-                <div class="contact-details">
-                    <p>Mail at : rs.aryant@gmail.com</p>
-                    <div class="social">
-                        <a href="">
-                            <ion-icon name="logo-linkedin"></ion-icon>
-                        </a>
-                        <a href="">
-                            <ion-icon name="logo-instagram"></ion-icon>
-                        </a>
-                    </div>
-                </div>             
-            </div>
-        </section> -->
+
+    <footer>
+        <p>Made with &hearts; by Aryan Tiwari</p>   
+    </footer>
     <script src="script.js"></script>
 </body>
 

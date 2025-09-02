@@ -295,6 +295,7 @@ body {
 }
 .popup-content {
   padding: 1em;
+  height: max-content;
 }
 .popup-content h2 {
   color: #4da6ff;
