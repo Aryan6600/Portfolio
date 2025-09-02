@@ -376,7 +376,7 @@ section.common .container .grid-wrapper .grid .card a.view-btn:nth-child(even):h
     color: var(--theme-black);
 } */
 section.common .container .grid-wrapper .grid .card:hover{
-    transform: scale(1.1);
+    transform: scale(0.98);
 }
 section.common .container .grid-wrapper .grid .card h3{
     padding-bottom: 1vw;
@@ -452,5 +452,12 @@ section.skills .container .grid-wrapper .grid .card h3{
         grid-template-columns: repeat(2,minmax(0,1fr));
         display: grid;
         gap: 2em;
+    }
+    section.projects .container .grid-wrapper .grid {
+        gap: 0em;
+    }
+    section.projects .container .grid-wrapper .grid .card{
+        box-shadow: none;
+        border: 1px solid rgba(255,255,255,0.1);
     }
 }

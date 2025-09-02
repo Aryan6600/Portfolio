@@ -21,6 +21,7 @@ body {
   line-height: 1.6;
   background-color: var(--theme-color-1);
   color: #aeb2b7;
+  min-height: 100vh;
   /* Soft gray for body text */
 }
 
@@ -128,6 +129,7 @@ body {
   flex-direction: column;
   gap: 20px;
   padding: 20px 0;
+  min-height: 100vh;
 }
 
 .main-content {
@@ -141,6 +143,7 @@ body {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  height: min-content;
 }
 
 .blog-post {
@@ -290,7 +293,9 @@ body {
   margin: 50px auto;
   padding: 30px;
 }
-
+.popup-content {
+  padding: 1em;
+}
 .popup-content h2 {
   color: #4da6ff;
   margin-bottom: 20px;
