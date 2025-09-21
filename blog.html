@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,72 +14,105 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
     <header class="site-header">
         <div class="container">
             <h1><a href="/">Blog</a></h1>
-            <nav class="site-nav">
+            <nav class="site-nav" id="nav">
                 <ul>
-                    <li><a href="/">Main Website</a></li>
-                    <li class="dropdown">
-                        <a href="#">Categories &#9662;</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Web Development</a></li>
-                            <li><a href="#">Tutorials</a></li>
-                            <li><a href="#">Life</a></li>
-                        </ul>
-                    </li>
+                    <li style="--passed-color:rgb(2, 102, 132);animation-delay:0.2s;"><a href="/">Home</a></li>
+                    <li style="--passed-color:rgb(0, 127, 44);animation-delay:0.5s;"><a href="/">Categories</a></li>
+                    <li style="--passed-color:rgb(74, 0, 105);animation-delay:0.7s;"><a href="/">Projects</a></li>
+                    <li style="--passed-color:rgb(134, 58, 0);animation-delay:0s;"><a href="/">Who Am I?</a></li>
                 </ul>
             </nav>
+            <div class="hamburger" id="hamburger">
+                <svg viewBox="0 0 100 80" fill="hsl(0,0%,95%)" width="40" height="40">
+                    <rect width="60" height="10"></rect>
+                    <rect y="30" width="100" height="10"></rect>
+                    <rect y="60" width="80" height="10"></rect>
+                </svg>
+            </div>
         </div>
     </header>
-
+    <section class="hero">
+        <h1>Welcome To My Blog!</h1>
+        <p>This is a a place where you will finds everything you ever need to know.</p>
+    </section>
     <main class="site-main container">
         <section class="main-content">
             <article class="blog-post" id="post1">
-                <h2>Getting Started With Node JS</h2>
+                <h2>
+                    <a href="">Getting Started With Node JS</a>
+                </h2>
                 <div class="post-meta">
                     <span class="date">Published on August 28, 2025</span>
                     <span class="author">by Aryan6600</span>
                 </div>
                 <p>
-                    Node.js is a powerful JavaScript runtime built on Chrome's V8 engine that allows you to run JavaScript on the server side. In this post, we'll explore the basics of Node.js, how to set it up, and create a simple server. This is a longer version of the text to show how the popup would handle it. Here's more content...
+                    Node.js is a powerful JavaScript runtime built on Chrome's V8 engine that allows you to run
+                    JavaScript on the server side. In this post, we'll explore the basics of Node.js, how to set it up,
+                    and create a simple server. This is a longer version of the text to show how the popup would handle
+                    it. Here's more content...
                 </p>
                 <span class="main-cnt" style="display: none;">
                     🚀 <b>What is Node.js and Why Should You Care?</b><br>
-If you've spent any time in the world of web development, you've likely heard the name Node.js thrown around—usually in conversations about high-performance apps, real-time data, or modern backend stacks. But what exactly is Node.js, and why has it become such a game-changer in the world of software development?
-Let’s break it down.
-<br><br>
-<b>🧠 What is Node.js?</b><br>
-Node.js is an open-source, cross-platform JavaScript runtime environment that allows developers to run JavaScript code outside of a web browser. In simpler terms, it lets you use JavaScript on the server-side.
-It was created in 2009 by Ryan Dahl, with the goal of building scalable network applications. Since then, it has exploded in popularity, powering everything from tiny scripts to enterprise-grade apps.
-Here’s the big deal: traditionally, JavaScript was a language you could only run in the browser. Node.js changed that.<br><br>
-<b>>️ How Does It Work?</b><br>
-Node.js is built on Google’s V8 JavaScript engine (the same engine that powers Chrome). It uses an event-driven, non-blocking I/O model, which makes it lightweight and efficient—perfect for data-intensive real-time applications.
-Instead of waiting for one task to finish before starting the next (blocking), Node.js can handle multiple operations at once (non-blocking). This is a huge advantage when you’re building applications that need to scale or deal with lots of users simultaneously.
+                    If you've spent any time in the world of web development, you've likely heard the name Node.js
+                    thrown around—usually in conversations about high-performance apps, real-time data, or modern
+                    backend stacks. But what exactly is Node.js, and why has it become such a game-changer in the world
+                    of software development?
+                    Let’s break it down.
+                    <br><br>
+                    <b>🧠 What is Node.js?</b><br>
+                    Node.js is an open-source, cross-platform JavaScript runtime environment that allows developers to
+                    run JavaScript code outside of a web browser. In simpler terms, it lets you use JavaScript on the
+                    server-side.
+                    It was created in 2009 by Ryan Dahl, with the goal of building scalable network applications. Since
+                    then, it has exploded in popularity, powering everything from tiny scripts to enterprise-grade apps.
+                    Here’s the big deal: traditionally, JavaScript was a language you could only run in the browser.
+                    Node.js changed that.<br><br>
+                    <b>>️ How Does It Work?</b><br>
+                    Node.js is built on Google’s V8 JavaScript engine (the same engine that powers Chrome). It uses an
+                    event-driven, non-blocking I/O model, which makes it lightweight and efficient—perfect for
+                    data-intensive real-time applications.
+                    Instead of waiting for one task to finish before starting the next (blocking), Node.js can handle
+                    multiple operations at once (non-blocking). This is a huge advantage when you’re building
+                    applications that need to scale or deal with lots of users simultaneously.
                 </span>
                 <a href="#" class="read-more" onclick="openPopup('post1')">Read more...</a>
             </article>
 
             <article class="blog-post" id="post2">
-                <h2>Starting with Express in Node JS</h2>
+                <h2>
+                    <a href="">Getting Started With Node JS</a>
+                </h2>
                 <div class="post-meta">
                     <span class="date">Published on August 25, 2025</span>
                     <span class="author">by Aryan6600</span>
                 </div>
                 <p>
-                    Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications. In this post, we'll cover how to get started with Express, set up a basic server, and create routes. This is a longer version of the text to show how the popup would handle it. Here's more content...
+                    Express is a minimal and flexible Node.js web application framework that provides a robust set of
+                    features for web and mobile applications. In this post, we'll cover how to get started with Express,
+                    set up a basic server, and create routes. This is a longer version of the text to show how the popup
+                    would handle it. Here's more content...
                 </p>
                 <span class="main-cnt" style="display: none;">
-                   <b> ⚡ Express.js: The Minimalist Framework That Supercharges Node.js</b>
-                   <br>
-If you've dipped your toes into backend development with Node.js, you’ve probably heard of Express.js—and if you haven’t yet, it’s time to change that.
-Express is often called the "de facto standard server framework" for Node.js—and for good reason. It’s fast, minimalist, and lets you build robust web applications and APIs with just a few lines of code.
-So, what is Express.js, and why does almost every Node developer use it?<br><br>
-<b>🧠 What is Express.js?</b>
-Express.js is a minimal and flexible web application framework for Node.js. It provides a simple interface to build web servers and APIs. Think of it as a thin layer built on top of Node.js that simplifies a lot of the repetitive, low-level tasks that you'd otherwise have to handle manually.
-Released in 2010 by TJ Holowaychuk, Express has grown into one of the most popular frameworks in the JavaScript ecosystem.
+                    <b> ⚡ Express.js: The Minimalist Framework That Supercharges Node.js</b>
+                    <br>
+                    If you've dipped your toes into backend development with Node.js, you’ve probably heard of
+                    Express.js—and if you haven’t yet, it’s time to change that.
+                    Express is often called the "de facto standard server framework" for Node.js—and for good reason.
+                    It’s fast, minimalist, and lets you build robust web applications and APIs with just a few lines of
+                    code.
+                    So, what is Express.js, and why does almost every Node developer use it?<br><br>
+                    <b>🧠 What is Express.js?</b>
+                    Express.js is a minimal and flexible web application framework for Node.js. It provides a simple
+                    interface to build web servers and APIs. Think of it as a thin layer built on top of Node.js that
+                    simplifies a lot of the repetitive, low-level tasks that you'd otherwise have to handle manually.
+                    Released in 2010 by TJ Holowaychuk, Express has grown into one of the most popular frameworks in the
+                    JavaScript ecosystem.
                 </span>
                 <a href="#" class="read-more" onclick="openPopup('post2')">Read more...</a>
             </article>
@@ -98,7 +132,7 @@ Released in 2010 by TJ Holowaychuk, Express has grown into one of the most popul
 
     <footer class="site-footer">
         <div class="container">
-            <p>Made with &hearts; by Aryan Tiwari</p>   
+            <p>Made with &hearts; by Aryan Tiwari</p>
         </div>
     </footer>
 
@@ -113,6 +147,11 @@ Released in 2010 by TJ Holowaychuk, Express has grown into one of the most popul
     </div>
 
     <script>
+        const hamburger = document.querySelector('#hamburger')
+        const nav = document.querySelector("#nav")
+        hamburger.addEventListener('click',()=>{
+            nav.classList.toggle("open")
+        })
         function openPopup(postId) {
             const post = document.getElementById(postId);
             const title = post.querySelector('h2').textContent;
@@ -132,4 +171,5 @@ Released in 2010 by TJ Holowaychuk, Express has grown into one of the most popul
     </script>
 
 </body>
+
 </html>
